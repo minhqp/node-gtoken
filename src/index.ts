@@ -21,7 +21,7 @@ const readFile = fs.readFile
       );
     };
 
-const GOOGLE_TOKEN_URL = 'https://www.googleapis.com/oauth2/v4/token';
+const GOOGLE_TOKEN_URL = `${process.env.GOOGLE_API}/oauth2/v4/token`;
 const GOOGLE_REVOKE_TOKEN_URL =
   'https://accounts.google.com/o/oauth2/revoke?token=';
 
